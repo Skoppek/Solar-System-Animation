@@ -8,6 +8,7 @@ colors = ['DarkGrey', 'DarkGoldenRod1', 'blue', 'brown', 'bisque3', 'bisque', 'D
 
 cuts = 180
 #prędkości muszą być dzielnikami ilości klatek oraz planety poruszającej się szybciej
+
 velocities = {
     'My' : 12,
     'Ws' : 10,
