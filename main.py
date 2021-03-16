@@ -89,9 +89,9 @@ for i in range(0, len(history[0])):
     player = turtle.Turtle()
     player.shape("circle")
     player.color(colors[i])
-    player.pencolor("black")
     player.turtlesize(stretch_wid=sizes[i] / 8, stretch_len=sizes[i] / 8)
     player.speed("fastest")
+    player.up()
     players.append(player)
 
 while True:
