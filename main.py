@@ -1,6 +1,5 @@
 import turtle
 import math
-import random
 
 from numpy import pi
 
@@ -10,10 +9,10 @@ cuts = 180
 #prędkości muszą być dzielnikami ilości klatek oraz planety poruszającej się szybciej
 
 velocities = {
-    'My' : 12,
-    'Ws' : 10,
-    'Za' : 9,
-    'Ms' : 6,
+    'My' : 20,
+    'Ws' : 18,
+    'Za' : 12,
+    'Ms' : 10,
     'Jz' : 5,
     'Sn' : 4,
     'Un' : 3,
@@ -22,15 +21,15 @@ velocities = {
 }
 
 init_positions = {
-    'My' : random.randrange(0, cuts),
-    'Ws' : random.randrange(0, cuts),
-    'Za' : random.randrange(0, cuts),
-    'Ms' : random.randrange(0, cuts),
-    'Jz' : random.randrange(0, cuts),
-    'Sn' : random.randrange(0, cuts),
-    'Un' : random.randrange(0, cuts),
-    'Nn' : random.randrange(0, cuts),
-    'Pn' : random.randrange(0, cuts)
+    'My' : 135,
+    'Ws' : 15,
+    'Za' : 90,
+    'Ms' : 60,
+    'Jz' : 165,
+    'Sn' : 150,
+    'Un' : 30,
+    'Nn' : 0,
+    'Pn' : 150
 }
 
 sizes = [
@@ -71,7 +70,7 @@ def remember():
         temp.append(pos)
     history.append(temp)
 
-frames = 0
+frames = 1
 remember()
 move(frames)
 while(is_finished()):
